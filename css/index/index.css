@@ -1741,11 +1741,16 @@
 }
 
 @media only screen and (max-width: 426px) {
-  .mb-nav {
+  .mekkanos .main-bg {
+    background-image: url("../../videos/backgroundvideo.gif");
+    background-color: #110f25;
+  }
+  .mekkanos .main-bg .mb-nav {
     display: block !important;
   }
-  .mb-nav .top-nav {
+  .mekkanos .main-bg .mb-nav .top-nav {
     position: fixed;
+    top: 0px;
     z-index: 1;
     background-color: #110f25 !important;
     padding-top: 10px;
@@ -1768,12 +1773,12 @@
     transition: top .75s ease-in;
     background-color: #e8e8e8;
   }
-  .mb-nav .top-nav h2 {
+  .mekkanos .main-bg .mb-nav .top-nav h2 {
     font-size: 17px;
     color: white;
     margin-bottom: 0px;
   }
-  .mb-nav .top-nav .menu {
+  .mekkanos .main-bg .mb-nav .top-nav .menu {
     list-style: none;
     overflow: hidden;
     display: -webkit-box;
@@ -1794,10 +1799,10 @@
     -webkit-transition: max-height .2s ease-out;
     transition: max-height .2s ease-out;
   }
-  .mb-nav .top-nav .menu form {
+  .mekkanos .main-bg .mb-nav .top-nav .menu form {
     margin-top: 0px !important;
   }
-  .mb-nav .top-nav .menu form .search-img {
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .search-img {
     margin-right: 16px;
     margin-left: 0px;
     border: 1px solid #444DDA;
@@ -1806,16 +1811,16 @@
     border-radius: 50%;
     text-align: center;
   }
-  .mb-nav .top-nav .menu form .search-img img {
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .search-img img {
     margin-top: 4px;
     width: 14px;
   }
-  .mb-nav .top-nav .menu form .get-started {
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .get-started {
     background-color: #444DDA;
     color: white;
     font-weight: 600;
   }
-  .mb-nav .top-nav .menu li a {
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a {
     display: inline-block;
     min-width: 75px;
     margin: .8em 0;
@@ -1824,32 +1829,32 @@
     text-decoration: none;
     font-size: 16px;
   }
-  .mb-nav .top-nav .menu li a:link, .mb-nav .top-nav .menu li a:visited {
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a:link, .mekkanos .main-bg .mb-nav .top-nav .menu li a:visited {
     color: white;
   }
-  .mb-nav .top-nav .menu li a:focus, .mb-nav .top-nav .menu li a:hover, .mb-nav .top-nav .menu li a:active {
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a:focus, .mekkanos .main-bg .mb-nav .top-nav .menu li a:hover, .mekkanos .main-bg .mb-nav .top-nav .menu li a:active {
     -webkit-transform: scale(1.1) rotate(-2deg);
             transform: scale(1.1) rotate(-2deg);
     color: white;
   }
-  .mb-nav .top-nav .logo {
+  .mekkanos .main-bg .mb-nav .top-nav .logo {
     display: inline-block;
     width: 150px;
     color: white;
   }
-  .mb-nav .top-nav .menu-icon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon {
     cursor: pointer;
     display: inline-block;
     padding: 22px 16px;
   }
-  .mb-nav .top-nav .menu-icon .navicon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon {
     background: white;
     display: block;
     height: 2px;
     position: relative;
     width: 1.625rem;
   }
-  .mb-nav .top-nav .menu-icon .navicon:before, .mb-nav .top-nav .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
     background: white;
     content: '';
     display: block;
@@ -1859,35 +1864,31 @@
     transition: all .2s ease-out;
     width: 100%;
   }
-  .mb-nav .top-nav .menu-icon .navicon:before {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before {
     top: 7px;
   }
-  .mb-nav .top-nav .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
     top: -7px;
   }
-  .mb-nav .top-nav .menu-btn {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn {
     display: none;
   }
-  .mb-nav .top-nav .menu-btn:checked ~ .menu {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu {
     max-height: 300px;
   }
-  .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-  }
-  .mekkanos .main-bg {
-    background-image: url("../../videos/backgroundvideo.gif");
-    background-color: #110f25;
   }
   .mekkanos .main-bg .nav .navbar {
     display: none;
