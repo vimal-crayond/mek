@@ -487,7 +487,7 @@
 
 .mekkanos .partner .subscribe .subscribe-row .email {
   color: white;
-  width: 130%;
+  width: 150%;
   margin: 0px auto;
   margin-top: 28px;
   border: 0px;
@@ -916,7 +916,7 @@
   }
   .mekkanos .partner .subscribe .subscribe-row .email {
     color: white;
-    width: 90%;
+    width: 140%;
     margin: 0px auto;
     border: 0px;
     margin-top: 24px;
@@ -1326,7 +1326,7 @@
   }
   .mekkanos .partner .subscribe .subscribe-row .email {
     color: white;
-    width: 80%;
+    width: 125%;
     font-size: 14px;
     padding-left: 4px;
     margin: 0px auto;
@@ -2328,7 +2328,7 @@
   }
   .mekkanos .partner .subscribe .subscribe-row .email-div .email {
     color: white;
-    width: 90%;
+    width: 160%;
     font-size: 14px;
     padding-left: 4px;
     margin: 10px 0px;
@@ -2946,7 +2946,7 @@
   }
   .mekkanos .partner .subscribe .subscribe-row .email-div .email {
     color: white;
-    width: 95%;
+    width: 140%;
     font-size: 14px;
     padding-left: 4px;
     margin: 10px 0px;
@@ -2969,7 +2969,7 @@
   }
   .mekkanos .footer {
     background-color: #110e21;
-    padding: 38px 0px;
+    padding: 38px 10px;
   }
   .mekkanos .footer .align {
     margin-top: 30px;
@@ -2979,7 +2979,7 @@
     font-size: 14px;
     font-family: normalbold;
     padding: 10px 0px;
-    margin-right: 20px;
+    margin-right: 17px;
   }
   .mekkanos .footer .align .social-links:hover {
     text-decoration: none;
