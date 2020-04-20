@@ -87,6 +87,9 @@
             
                 .navbar-brand{
                     color: white;
+                    width: 20%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
                 .nav-link{
                     color: white;
@@ -513,7 +516,7 @@
                 }
                 .email{
                     color: white;
-                    width: 90%;
+                    width: 130%;
                     margin: 0px auto;
                     margin-top: 28px;
                     border: 0px;
@@ -542,7 +545,7 @@
         
         
         .align{
-            margin-top: 30px;
+            margin-top: 18px;
             .social-links{
                 color: #8784A8;
                     font-size: 16px;
@@ -561,6 +564,12 @@
             font-family: normalbold;
             margin-bottom: 20px;
             margin-top: 18px;
+        }
+        .footer-brand{
+            
+            img{
+                width: 32% !important;
+            }
         }
         .icon{
             width: 55px;
@@ -582,7 +591,7 @@
             // margin-top: 22px;
             p{
             font-weight: 600;
-            margin-top: 18px;
+            margin-top: 27px;
             }
         }
     }
@@ -604,15 +613,28 @@
                 .nav-bg{
                     color: white;
                     margin: 0px;
-                    padding: 10px 60px;
+                    padding: 6px 60px;
                 
                     .navbar-brand{
                         color: white;
+                        
+                        width: 22%;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
                     }
                     .nav-link{
                         color: white;
                         padding: 10px 22px;
                         margin: 5px;
+                        &:hover{
+                            // color: #1420d2;
+                            // position: absolute;
+                            // top: 0px;
+                            font-weight: 600;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            // background-color: #444DDA;
+                        }
                     }
                     form{
                         .search-img{
@@ -1008,12 +1030,32 @@
                         text-decoration: none;
                     }
             }
+            .align{
+                margin-top: 21px;
+                .social-links{
+                    color: #8784A8;
+                        font-size: 16px;
+                        font-family: normalbold;
+                        padding: 10px 0px;
+                        margin-right:20px;
+                        &:hover{
+                            text-decoration: none;
+                            color: white;
+                        }
+                }
+            }
             h5{
                 font-size: 16px;
                 color: white;
                 font-family: normalbold;
                 margin-bottom: 20px;
                 margin-top: 12px;
+            }
+            .footer-brand{
+            
+                img{
+                    width: 32% !important;
+                }
             }
             .icon{
                 width: 55px;
@@ -1059,6 +1101,13 @@
                     padding: 10px 44px ;
                     .navbar-brand{
                         color: white;
+                        width: 18%;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        margin-right: 0px;
+                        img{
+                            width: 100% !important;
+                        }
                     }
                     .nav-link{
                         color: white;
@@ -1454,12 +1503,32 @@
                         text-decoration: none;
                     }
             }
+            .align{
+                margin-top: 13px;
+                .social-links{
+                    color: #8784A8;
+                        font-size: 15px;
+                        font-family: normalbold;
+                        padding: 10px 0px;
+                        margin-right:20px;
+                        &:hover{
+                            text-decoration: none;
+                            color: white;
+                        }
+                }
+            }
             h5{
                 font-size: 16px;
                 color: white;
                 font-family: normalbold;
                 margin-bottom: 20px;
                 margin-top: 12px;
+            }
+            .footer-brand{
+            
+                img{
+                    width: 50% !important;
+                }
             }
             .icon{
                 width: 55px;
@@ -1958,7 +2027,14 @@
                         margin-bottom: 0px;
                         
                     }
-                
+                    .navbar-brand{
+                        width: 58%;
+                        padding-bottom: 5px;
+                        padding-top: 0px;
+                        img{
+                            width: 80%;
+                        }
+                    }
                     .menu{
                         list-style: none;
                         overflow: hidden;
@@ -2091,6 +2167,7 @@
                     color: white;
                     .navbar-brand{
                         color: white;
+                        
                     }
                     .navbar-collapse{
                         display: none;
@@ -2547,6 +2624,12 @@
                 margin-bottom: 20px;
                 margin-top: 12px;
             }
+            .footer-brand{
+            
+                img{
+                    width: 53% !important;
+                }
+            }
             .icon{
                 width: 55px;
                 height: 55px;
@@ -2590,6 +2673,156 @@
                 // background-image: url("../../images/Group.png");
                 // background-position: top;
                 // height: 48px;
+            }
+            .mb-nav{
+                display: block !important;
+                .top-nav {
+                    position: fixed;
+                    top: 0px;
+                    z-index: 1;
+                    background-color: #110f25 !important;
+                    padding-top: 10px;
+                    padding-left: 30px;
+                    padding-right: 14px;
+                    padding-bottom: 0px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    transition: top .75s ease-in;
+                    background-color: #e8e8e8;
+                    h2{
+                        font-size: 17px;
+                        color: white;
+                        margin-bottom: 0px;
+                        
+                    }
+                    .navbar-brand{
+                        width: 65%;
+                        padding-bottom: 5px;
+                        padding-top: 0px;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                    .menu{
+                        list-style: none;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        max-height: 0;
+                        color: white;
+                        padding-left:0px ;
+                        margin: 0px !important;
+                        transition: max-height .2s ease-out;
+                        form{
+                            margin-top: 0px !important;
+                            .search-img{
+                                    margin-right:16px;
+                                    margin-left: 0px;
+                                    border: 1px solid #444DDA;
+                                    width: 34px;
+                                    height: 34px;
+                                    border-radius:50%;
+                                    text-align: center;
+                                img{
+                                    margin-top: 4px;
+                                    width: 14px;
+                                }
+                            }
+                            .get-started{
+                                background-color: #444DDA;
+                                color: white;
+                                font-weight: 600;
+                            }
+                        }
+                
+                        li a{
+                            display: inline-block;
+                            min-width: 75px;
+                            margin: .8em 0;
+                            transition: 1s all;
+                            text-decoration: none;
+                            font-size: 16px;
+                
+                            &:link, &:visited{
+                                color: white;
+                            }
+                
+                            &:focus, &:hover, &:active{
+                                transform: scale(1.1) rotate(-2deg);
+                                color: white
+                            }
+                        }
+                    }
+                
+                    .logo{
+                        display: inline-block;
+                        width: 150px;
+                        color: white;
+                    }
+                
+                    .menu-icon{
+                        cursor: pointer;
+                        display: inline-block;
+                        padding: 22px 16px;
+                
+                        .navicon{
+                            background: white;
+                            display: block;
+                            height: 2px;
+                            position: relative;
+                            width: 1.625rem;
+                
+                            &:before, &:after{
+                                background: white;
+                                content: '';
+                                display: block;
+                                height: 100%;
+                                position: absolute;
+                                transition: all .2s ease-out;
+                                width: 100%;
+                            }
+                
+                            &:before{
+                                top: 7px;
+                            }
+                
+                            &:after{
+                                top: -7px;
+                            }
+                        }
+                    }
+                
+                    .menu-btn{
+                        display: none;
+                
+                        &:checked ~ .menu{
+                            max-height: 300px;
+                        }
+                
+                        &:checked ~ .menu-icon .navicon{
+                            background: transparent;
+                
+                            &:before{
+                                transform: rotate(-45deg);
+                            }
+                
+                            &:after{
+                                transform: rotate(45deg);
+                            }
+                        }
+                
+                        &:checked ~ .menu-icon:not(.steps) .navicon{
+                            &:before, &:after{
+                                top: 0;
+                            }
+                        }
+                    }
+                }
             }
             .nav{
                 .nav-bg{
@@ -3044,7 +3277,12 @@
                         }
                 }
             }
+            .footer-brand{
             
+                img{
+                    width: 62% !important;
+                }
+            }
             .icon{
                 width: 55px;
                 height: 55px;

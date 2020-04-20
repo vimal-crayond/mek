@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title> Mekkanos</title>
      <!-- bootstrap plugin -->
     <link rel="stylesheet" href="./plugin/4.0.0_bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./plugin/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- stylesheet -->
     <link rel="stylesheet" href="./css/index/index.css">
-
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
 </head>
 <body>
   
@@ -23,7 +28,7 @@
           <div class="bg">
             <div class="mb-nav" style="display: none;">
               <nav class="top-nav" id="top-nav">
-                <h2>MEKKANOS</h2>
+                <a class="navbar-brand"  href="#"><img src="./images/Mekkanos_Logo.png" class="img-fluid w-75" alt=""></a>
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
@@ -44,7 +49,7 @@
           <div class="nav">
             
             <nav class="navbar navbar-dark fixed-top navbar-expand-md col-12 nav-bg">
-              <a class="navbar-brand" href="#">MEKKANOS</a>
+              <a class="navbar-brand" href="#"><img src="./images/Mekkanos_Logo.png" class="img-fluid w-75" alt=""></a>
               
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -418,11 +423,19 @@
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-4 d-flex px-1 align-items-center  email-div">
-                    <input type="email" placeholder="Enter Email" class="email">
+                    <form action="https://gmail.us4.list-manage.com/subscribe/post?u=1ceace36d593fee43d45d5b20&amp;id=f03890f8a3" method="post" autocomplete="off" name="mc-embedded-subscribe-form"  target="_blank" novalidate>
+                    <input type="email" value="" name="EMAIL"  placeholder="Enter Email" class="required email" id="mce-EMAIL" class="email">
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div> 
+                  
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 d-flex px-1 mt-2 align-items-center">
-                    <button class="btn subscribe-btn">Subscribe</button>
+                  <div class="col-lg-2 col-md-2 col-sm-2 d-flex px-1 mt-2 align-items-center clear">
+                    <!-- <button class="">Subscribe</button> -->
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn subscribe-btn">
                   </div>
+                </form>
                 </div>
               </div>
             </div>
@@ -432,7 +445,8 @@
           <div class="container">
             <div class="row mt-4 social">
               <div class="col-lg-6 col-md-6 col-sm-12 mt-2">
-                <h5>MEKKANOS</h5>
+                <a href="" class="footer-brand"><img src="./images/Mekkanos_Logo.png" class="img-fluid " alt=""></a>
+                
                 <div class="align">
                   <a href="#" class="social-links">Company</a>
                   <a href="#" class="social-links">Top Features</a>
@@ -470,7 +484,7 @@
   }
 },2000);
 </script>
-
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script src="./plugin/jquery.min.js"></script>
 <script src="./plugin/bootstrap.min.js"></script>
 </html>

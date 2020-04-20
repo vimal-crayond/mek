@@ -37,6 +37,9 @@
 
 .mekkanos .main-bg .nav .nav-bg .navbar-brand {
   color: white;
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .mekkanos .main-bg .nav .nav-bg .nav-link {
@@ -484,7 +487,7 @@
 
 .mekkanos .partner .subscribe .subscribe-row .email {
   color: white;
-  width: 90%;
+  width: 130%;
   margin: 0px auto;
   margin-top: 28px;
   border: 0px;
@@ -513,7 +516,7 @@
 }
 
 .mekkanos .footer .align {
-  margin-top: 30px;
+  margin-top: 18px;
 }
 
 .mekkanos .footer .align .social-links {
@@ -535,6 +538,10 @@
   font-family: normalbold;
   margin-bottom: 20px;
   margin-top: 18px;
+}
+
+.mekkanos .footer .footer-brand img {
+  width: 32% !important;
 }
 
 .mekkanos .footer .icon {
@@ -566,7 +573,7 @@
 
 .mekkanos .footer .copyright p {
   font-weight: 600;
-  margin-top: 18px;
+  margin-top: 27px;
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1028px) {
@@ -577,15 +584,23 @@
   .mekkanos .main-bg .nav .nav-bg {
     color: white;
     margin: 0px;
-    padding: 10px 60px;
+    padding: 6px 60px;
   }
   .mekkanos .main-bg .nav .nav-bg .navbar-brand {
     color: white;
+    width: 22%;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .mekkanos .main-bg .nav .nav-bg .nav-link {
     color: white;
     padding: 10px 22px;
     margin: 5px;
+  }
+  .mekkanos .main-bg .nav .nav-bg .nav-link:hover {
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
   }
   .mekkanos .main-bg .nav .nav-bg form .search-img {
     margin: auto 16px;
@@ -930,12 +945,29 @@
   .mekkanos .footer a:hover {
     text-decoration: none;
   }
+  .mekkanos .footer .align {
+    margin-top: 21px;
+  }
+  .mekkanos .footer .align .social-links {
+    color: #8784A8;
+    font-size: 16px;
+    font-family: normalbold;
+    padding: 10px 0px;
+    margin-right: 20px;
+  }
+  .mekkanos .footer .align .social-links:hover {
+    text-decoration: none;
+    color: white;
+  }
   .mekkanos .footer h5 {
     font-size: 16px;
     color: white;
     font-family: normalbold;
     margin-bottom: 20px;
     margin-top: 12px;
+  }
+  .mekkanos .footer .footer-brand img {
+    width: 32% !important;
   }
   .mekkanos .footer .icon {
     width: 55px;
@@ -978,6 +1010,13 @@
   }
   .mekkanos .main-bg .nav .nav-bg .navbar-brand {
     color: white;
+    width: 18%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+  }
+  .mekkanos .main-bg .nav .nav-bg .navbar-brand img {
+    width: 100% !important;
   }
   .mekkanos .main-bg .nav .nav-bg .nav-link {
     color: white;
@@ -1319,12 +1358,29 @@
   .mekkanos .footer a:hover {
     text-decoration: none;
   }
+  .mekkanos .footer .align {
+    margin-top: 13px;
+  }
+  .mekkanos .footer .align .social-links {
+    color: #8784A8;
+    font-size: 15px;
+    font-family: normalbold;
+    padding: 10px 0px;
+    margin-right: 20px;
+  }
+  .mekkanos .footer .align .social-links:hover {
+    text-decoration: none;
+    color: white;
+  }
   .mekkanos .footer h5 {
     font-size: 16px;
     color: white;
     font-family: normalbold;
     margin-bottom: 20px;
     margin-top: 12px;
+  }
+  .mekkanos .footer .footer-brand img {
+    width: 50% !important;
   }
   .mekkanos .footer .icon {
     width: 55px;
@@ -1777,6 +1833,14 @@
     font-size: 17px;
     color: white;
     margin-bottom: 0px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand {
+    width: 58%;
+    padding-bottom: 5px;
+    padding-top: 0px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand img {
+    width: 80%;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu {
     list-style: none;
@@ -2308,6 +2372,9 @@
     margin-bottom: 20px;
     margin-top: 12px;
   }
+  .mekkanos .footer .footer-brand img {
+    width: 53% !important;
+  }
   .mekkanos .footer .icon {
     width: 55px;
     height: 55px;
@@ -2348,6 +2415,159 @@
   .mekkanos .main-bg {
     background-image: url("../../videos/backgroundvideo.gif");
     background-color: #110f25;
+  }
+  .mekkanos .main-bg .mb-nav {
+    display: block !important;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #110f25 !important;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 14px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: top .75s ease-in;
+    transition: top .75s ease-in;
+    background-color: #e8e8e8;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav h2 {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand {
+    width: 65%;
+    padding-bottom: 5px;
+    padding-top: 0px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand img {
+    width: 80%;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu {
+    list-style: none;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    max-height: 0;
+    color: white;
+    padding-left: 0px;
+    margin: 0px !important;
+    -webkit-transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu form {
+    margin-top: 0px !important;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .search-img {
+    margin-right: 16px;
+    margin-left: 0px;
+    border: 1px solid #444DDA;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .search-img img {
+    margin-top: 4px;
+    width: 14px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu form .get-started {
+    background-color: #444DDA;
+    color: white;
+    font-weight: 600;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a {
+    display: inline-block;
+    min-width: 75px;
+    margin: .8em 0;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a:link, .mekkanos .main-bg .mb-nav .top-nav .menu li a:visited {
+    color: white;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu li a:focus, .mekkanos .main-bg .mb-nav .top-nav .menu li a:hover, .mekkanos .main-bg .mb-nav .top-nav .menu li a:active {
+    -webkit-transform: scale(1.1) rotate(-2deg);
+            transform: scale(1.1) rotate(-2deg);
+    color: white;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .logo {
+    display: inline-block;
+    width: 150px;
+    color: white;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 22px 16px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 1.625rem;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before {
+    top: 7px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
+    top: -7px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn {
+    display: none;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu {
+    max-height: 300px;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
   }
   .mekkanos .main-bg .nav .nav-bg {
     color: white;
@@ -2764,6 +2984,9 @@
   .mekkanos .footer .align .social-links:hover {
     text-decoration: none;
     color: white;
+  }
+  .mekkanos .footer .footer-brand img {
+    width: 62% !important;
   }
   .mekkanos .footer .icon {
     width: 55px;
