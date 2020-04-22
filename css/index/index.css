@@ -625,7 +625,7 @@
     font-weight: 600;
   }
   .mekkanos .main-bg .video-text .header-text {
-    padding-top: 200px;
+    padding-top: 150px;
     color: white;
   }
   .mekkanos .main-bg .video-text .header-text .text {
@@ -666,7 +666,7 @@
     margin-left: 32px;
   }
   .mekkanos .main-bg .video-text .header-text .header-img img {
-    width: 85%;
+    width: 100%;
   }
   .mekkanos .main-bg .mountain-bg {
     background-image: url("../../images/mountain.png");
@@ -3919,7 +3919,7 @@
     height: 200px;
     width: 40%;
     position: absolute;
-    bottom: 1%;
+    bottom: 18%;
     background-size: cover;
     margin-left: 60%;
   }
