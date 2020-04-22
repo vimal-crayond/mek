@@ -1048,7 +1048,7 @@
   .mekkanos .main-bg .video-text .header-text {
     color: white;
     margin-top: 10px;
-    padding-top: 150px;
+    padding-top: 125px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -1507,7 +1507,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -2055,7 +2055,7 @@
   }
   .mekkanos .main-bg .header-bg {
     display: block;
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 38%;
     position: absolute;
@@ -2675,7 +2675,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -3295,7 +3295,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -3915,7 +3915,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -4542,7 +4542,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 45%;
     position: absolute;
@@ -5144,7 +5144,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url(../../images/Humanoid.png);
+    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;
