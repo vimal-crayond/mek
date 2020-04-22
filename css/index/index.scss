@@ -87,9 +87,12 @@
             
                 .navbar-brand{
                     color: white;
-                    width: 20%;
+                    
                     padding-top: 5px;
                     padding-bottom: 5px;
+                    img{
+                        width: 160px;
+                    }
                 }
                 .nav-link{
                     color: white;
@@ -568,7 +571,7 @@
         .footer-brand{
             
             img{
-                width: 32% !important;
+                width: 30% !important;
             }
         }
         .icon{
@@ -618,9 +621,11 @@
                     .navbar-brand{
                         color: white;
                         
-                        width: 22%;
                         padding-top: 0px;
                         padding-bottom: 0px;
+                        img{
+                            width: 140px;
+                        }
                     }
                     .nav-link{
                         color: white;
@@ -1054,7 +1059,7 @@
             .footer-brand{
             
                 img{
-                    width: 32% !important;
+                    width: 30% !important;
                 }
             }
             .icon{
@@ -1101,19 +1106,18 @@
                     padding: 10px 44px ;
                     .navbar-brand{
                         color: white;
-                        width: 18%;
                         padding-top: 0px;
                         padding-bottom: 0px;
                         margin-right: 0px;
                         img{
-                            width: 100% !important;
+                            height: 46px;
                         }
                     }
                     .nav-link{
                         color: white;
                         padding: 10px 10px;
                         margin: 5px;
-                        font-size:15px;
+                        font-size:14px;
                     }
                     form{
                         .search-img{
@@ -1582,6 +1586,9 @@
                     color: white;
                     .navbar-brand{
                         color: white;
+                        img{
+                            width: 96px;
+                        }
                     } 
                       
                     .nav-link{
@@ -2037,11 +2044,10 @@
                         
                     }
                     .navbar-brand{
-                        width: 58%;
                         padding-bottom: 5px;
                         padding-top: 0px;
                         img{
-                            width: 80%;
+                            width: 160px;
                         }
                     }
                     .menu{
@@ -2271,7 +2277,7 @@
                 height: 200px;
                 width: 38%;
                 position: absolute;
-                bottom: 46px;
+                bottom: 8px;
                 background-size: cover;
                 margin-left: 61%;
             }
@@ -2650,7 +2656,7 @@
             .footer-brand{
             
                 img{
-                    width: 53% !important;
+                    width: 51% !important;
                 }
             }
             .icon{
@@ -2685,6 +2691,7 @@
         }
     }
 }
+// iphone 6s/7s/8s
 @media only screen and (max-width: 415px) {
     
     .mekkanos{
@@ -2724,12 +2731,9 @@
                         
                     }
                     .navbar-brand{
-                        width: 58%;
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        img{
-                            width: 80%;
-                        }
+                        
                     }
                     .menu{
                         list-style: none;
@@ -3371,6 +3375,7 @@
         }
     }
 }
+// iphone 5s/e
 @media only screen and (max-width: 380px) {
     
     .mekkanos{
@@ -3410,12 +3415,9 @@
                         
                     }
                     .navbar-brand{
-                        width: 58%;
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        img{
-                            width: 80%;
-                        }
+                        
                     }
                     .menu{
                         list-style: none;
@@ -4058,7 +4060,7 @@
         }
     }
 }
-
+// iphone 6/7/8
 @media only screen and (max-width: 374px) {
     .mekkanos{
         .main-bg{
@@ -4096,12 +4098,9 @@
                         
                     }
                     .navbar-brand{
-                        width: 65%;
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        img{
-                            width: 80%;
-                        }
+                        
                     }
                     .menu{
                         list-style: none;
@@ -4752,12 +4751,9 @@
                         
                     }
                     .navbar-brand{
-                        width: 58%;
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        img{
-                            width: 80%;
-                        }
+                        
                     }
                     .menu{
                         list-style: none;
