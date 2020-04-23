@@ -168,11 +168,9 @@
       $(".solution-list").slideToggle();
       $(".service-list").slideUp();
     });
-
-
-
     $("#solution-hover").hover(function(){
       $("#solution-dropdown").show();
+      $("#service-dropdown").hide();
     });
     $("#solution-dropdown").mouseover(function(){
       $("#solution-dropdown").show();
@@ -180,12 +178,15 @@
     $("#solution-dropdown").mouseout(function(){
       $("#solution-dropdown").hide();
     });
-    
-
-
-
-    $("#service-hover").hover(function(){
+    $("#digital-hover").mouseover(function(){
+      $("#service-dropdown").hide();
+    })
+    $("#pricing-hover").mouseover(function(){
+      $("#solution-dropdown").hide();
+    })
+    $("#service-hover").mouseover(function(){
       $("#service-dropdown").show();
+      $("#solution-dropdown").hide();
     });
     $("#service-dropdown").mouseover(function(){
       $("#service-dropdown").show();
@@ -193,19 +194,6 @@
     $("#service-dropdown").mouseout(function(){
       $("#service-dropdown").hide();
     });
-
-
-    // $("#service-hover").mouseover(function(){
-    //   $("#service-dropdown").show();
-    // });
-    // $("#service-hover").mouseout(function(){
-    //   $("#service-dropdown").hide();
-    // });
-    // $("#service-dropdown").mouseout(function(){
-    //   $("#service-dropdown").hide();
-    // });
-     
   });
- 
 </script>
 </html>    

@@ -66,9 +66,7 @@
          -o-border-radius: $radius;
             border-radius: $radius;
   }
-body{
-    zoom:0 !important;
-}
+
 .mekkanos{
     .main-bg{
         // background-image: url("../../images/Group\ 9.png");
@@ -161,7 +159,7 @@ body{
                     margin-top: 40px;
                     h1{
                         font-size: 46px;
-                        padding-right: 58px;
+                        padding-right: 10px;
                         line-height: 70px;
                         font-family: normalbold;
                     }
@@ -184,6 +182,12 @@ body{
                             &:hover{
                                 background-color: #1420d2;
                             }
+                            a{
+                                color: white;
+                                &:hover{
+                                    text-decoration: none;
+                                }  
+                            }
                         }
                         .demo{
                             background-color: #24242d;
@@ -196,12 +200,19 @@ body{
                             &:hover{
                                 background-color:#444DDA ;
                             }
+                            a{
+                                color: white;
+                                &:hover{
+                                    text-decoration: none;
+                                }  
+                                img{
+                                    margin: auto 10px;
+                                }
+                            }
                             // &:focus{
                             //     outline: none;
                             // }
-                            img{
-                                margin: auto 10px;
-                            }
+                            
                         }
                     }
                 }
@@ -313,65 +324,70 @@ body{
         .solution-card{
             .card-padding{
                 padding: 0px 20px;
-                .card{
-                    background-color:  #17152a;
-                    padding: 18px 24px;
-                    border: 1px solid #262c8a;
-                    border-radius: 6px;
-                    margin: 36px auto;
-                    h5{
-                        border-bottom: 1px solid grey;
-                        font-size: 14px;
-                        color: white;
-                        font-weight: 500;
-                        padding-bottom: 16px;
-                        margin: 14px 0px;
-                        font-family: semibold;
+                a{   
+                    &:hover{
+                        text-decoration: none;
                     }
-                    li{
-                        font-size: 13px;
-                        color:#9594a5; 
-                        line-height: 28px;
-                        font-family: book;
-                        font-weight: 600;
-                    }
-                    .card-icon-1{
-                        circle{
-                            fill: #454cbf;
-                        }                  
-                    }
-                    .card-icon-4{
-                        circle{
-                            fill: #ff1616;
+                    .card{
+                        background-color:  #17152a;
+                        padding: 18px 24px;
+                        border: 1px solid #262c8a;
+                        border-radius: 6px;
+                        margin: 36px auto;
+                        h5{
+                            border-bottom: 1px solid grey;
+                            font-size: 14px;
+                            color: white;
+                            font-weight: 500;
+                            padding-bottom: 16px;
+                            margin: 14px 0px;
+                            font-family: semibold;
+                        }
+                        li{
+                            font-size: 13px;
+                            color:#9594a5; 
+                            line-height: 28px;
+                            font-family: book;
+                            font-weight: 600;
+                        }
+                        .card-icon-1{
+                            circle{
+                                fill: #454cbf;
+                            }                  
+                        }
+                        .card-icon-4{
+                            circle{
+                                fill: #ff1616;
+                            }
                         }
                     }
-                }
-                .card-2{
-                    background-color:  #17152a;
-                    padding: 18px 24px;
-                    border: 1px solid #262c8a;
-                    border-radius: 6px;
-                    margin-bottom: 36px;
-                    margin-top: 90px;
-                    h5{
-                        border-bottom: 1px solid grey;
-                        font-size: 14px;
-                        color: white;
-                        font-weight: 500;
-                        padding-bottom: 16px;
-                        margin: 14px 0px;
-                        font-family: semibold;
-                    }
-                    li{
-                        font-size: 13px;
-                        color:#9594a5; 
-                        line-height: 28px;
-                        font-weight: 600;
-                        font-family: book;
-                    }
-                    .card-icon-2{
-                        circle{
-                            fill: turquoise;
+                    .card-2{
+                        background-color:  #17152a;
+                        padding: 18px 24px;
+                        border: 1px solid #262c8a;
+                        border-radius: 6px;
+                        margin-bottom: 36px;
+                        margin-top: 90px;
+                        h5{
+                            border-bottom: 1px solid grey;
+                            font-size: 14px;
+                            color: white;
+                            font-weight: 500;
+                            padding-bottom: 16px;
+                            margin: 14px 0px;
+                            font-family: semibold;
+                        }
+                        li{
+                            font-size: 13px;
+                            color:#9594a5; 
+                            line-height: 28px;
+                            font-weight: 600;
+                            font-family: book;
+                        }
+                        .card-icon-2{
+                            circle{
+                                fill: turquoise;
+                            }
                         }
                     }
                 }
@@ -1341,7 +1357,7 @@ body{
             }
         } 
         .solution{
-            padding-top:150px;
+            padding-top:100px;
             background-color:  #110f25;
             .solution-text{
                 .solution-img{

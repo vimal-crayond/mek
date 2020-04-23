@@ -39,7 +39,7 @@
               <li class="solution-list"><a href="digital_finance_admin.html">Digital Finance Admin</a></li>
               <li class="solution-list"><a href="digital_data_analyst.html">Digital Data Analyst</a></li>
               <li class="solution-list"><a href="digital_mobile_innovation.html">Digital Mobile Innovation</a></li>
-              <li><a href="#">Pricing</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
               <form class="form-inline my-2 my-lg-0">
                 <a class="search-img">
                   <img src="./images/Group 2.png" alt="">
@@ -57,7 +57,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">New Digital Worker</a>
+                  <a class="nav-link" id="digital-hover" href="#">New Digital Worker</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="services.html" id="service-hover">
@@ -83,7 +83,7 @@
                   </div>  
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" id="pricing-hover" href="pricing.html">Pricing</a>
                 </li>
                 
               </ul>
@@ -97,7 +97,7 @@
           </nav>
         </div>
       </div>
-      <div class="container-fluid solution">
+      <div class="container-fluid solution ">
         <div class="container">
           <div class="row py-5">
             <div class="col-lg-6 col-md-6 flex align-items-center">
@@ -129,7 +129,7 @@
                 <div class="align">
                   <a href="#" class="social-links">About</a>
                   <a href="#" class="social-links">Opportunities</a>
-                  <a href="#" class="social-links">Contact</a>
+                  <a href="contact.html" class="social-links">Contact</a>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12  text-right copyright">
@@ -166,11 +166,9 @@
       $(".solution-list").slideToggle();
       $(".service-list").slideUp();
     });
-
-
-
     $("#solution-hover").hover(function(){
       $("#solution-dropdown").show();
+      $("#service-dropdown").hide();
     });
     $("#solution-dropdown").mouseover(function(){
       $("#solution-dropdown").show();
@@ -178,12 +176,15 @@
     $("#solution-dropdown").mouseout(function(){
       $("#solution-dropdown").hide();
     });
-    
-
-
-
-    $("#service-hover").hover(function(){
+    $("#digital-hover").mouseover(function(){
+      $("#service-dropdown").hide();
+    })
+    $("#pricing-hover").mouseover(function(){
+      $("#solution-dropdown").hide();
+    })
+    $("#service-hover").mouseover(function(){
       $("#service-dropdown").show();
+      $("#solution-dropdown").hide();
     });
     $("#service-dropdown").mouseover(function(){
       $("#service-dropdown").show();
@@ -191,18 +192,6 @@
     $("#service-dropdown").mouseout(function(){
       $("#service-dropdown").hide();
     });
-
-
-    // $("#service-hover").mouseover(function(){
-    //   $("#service-dropdown").show();
-    // });
-    // $("#service-hover").mouseout(function(){
-    //   $("#service-dropdown").hide();
-    // });
-    // $("#service-dropdown").mouseout(function(){
-    //   $("#service-dropdown").hide();
-    // });
-     
   });
  
 </script>
