@@ -114,6 +114,7 @@
                     .dropdown-item{
                         color: white;
                         padding: 12px 22px;
+                        font-size:14px;
                         &:hover{
                            background-color: #110f25;
                            padding-left: 21.8px;
@@ -144,6 +145,13 @@
                         &:hover{
                             background-color:#1420d2 ;
                         }
+                        a{
+                            color:white;
+                            &:hover{
+                                text-decoration:none;
+                            }
+                        }
+
                     }
                 }
             }
@@ -243,6 +251,11 @@
                 font-size: 28px;
                 font-family: normalbold;
             }
+            .p{
+                
+                margin: 15px auto !important;
+                
+            }
             p{
                 font-weight: 400;
                 font-size: 18px;
@@ -257,6 +270,7 @@
                 align-items: center;
                 .Cards{
                     width: 65%;
+                    
                     margin: auto;
                     .card{
                         background-color: #17152a ;
@@ -677,6 +691,7 @@
                     .dropdown-item{
                         color: white;
                         padding: 12px 22px;
+                        font-size:14px;
                         &:hover{
                            background-color: #110f25;
                         }
@@ -705,6 +720,12 @@
                         font-weight: 600;
                         &:hover{
                             background-color:#1420d2 ;
+                        }
+                        a{
+                            color:white;
+                            &:hover{
+                                text-decoration:none;
+                            }
                         }
                     }
                 }
@@ -871,6 +892,7 @@
                             background-color: #444DDA;
                             color: white;
                             font-weight: 600;
+                            
                         }
                     }
                 }
@@ -2991,6 +3013,9 @@
                     color: white;
                     font-size: 24px;
                 }
+                .p{
+                    margin:12px auto !important;
+                }
                 p{
                     font-weight: 400;
                     font-size: 14px;
@@ -3068,60 +3093,62 @@
                 padding-left: 0px;
                 padding-right: 0px;
                 .card-padding{
-                    .card{
-                        background-color:  #110f25;
-                        padding: 18px 32px;
-                        border-radius: 6px;
-                        margin: 20px 16px;
-                        h5{
-                            border-bottom: 1px solid grey;
-                            font-size: 16px;
-                            color: white;
-                            font-weight: 500;
-                            padding-bottom: 16px;
-                            margin: 14px 0px;
-                        }
-                        li{
-                            font-size: 15px;
-                            color:#9594a5; 
-                            line-height: 32px;
-                            font-weight: 600;
-                        }
-                        .card-icon-1{
-                            circle{
-                                fill: #454cbf;
-                            }                  
-                        }
-                        .card-icon-4{
-                            circle{
-                                fill: #ff1616;
+                    a{
+                        .card{
+                            background-color:  #110f25;
+                            padding: 18px 32px;
+                            border-radius: 6px;
+                            margin: 20px 16px;
+                            h5{
+                                border-bottom: 1px solid grey;
+                                font-size: 16px;
+                                color: white;
+                                font-weight: 500;
+                                padding-bottom: 16px;
+                                margin: 14px 0px;
+                            }
+                            li{
+                                font-size: 15px;
+                                color:#9594a5; 
+                                line-height: 32px;
+                                font-weight: 600;
+                            }
+                            .card-icon-1{
+                                circle{
+                                    fill: #454cbf;
+                                }                  
+                            }
+                            .card-icon-4{
+                                circle{
+                                    fill: #ff1616;
+                                }
                             }
                         }
-                    }
-                    .card-2{
-                        background-color:  #110f25;
-                        padding: 18px 32px;
-                        border: 1px solid #444DDA;
-                        border-radius: 6px;
-                        margin: 10px 16px;
-                        margin-top: 10px;
-                        h5{
-                            border-bottom: 1px solid grey;
-                            font-size: 15px;
-                            color: white;
-                            font-weight: 500;
-                            padding-bottom: 16px;
-                            margin: 14px 0px;
-                        }
-                        li{
-                            font-size: 15px;
-                            color:#9594a5; 
-                            line-height: 32px;
-                            font-weight: 600;
-                        }
-                        .card-icon-2{
-                            circle{
-                                fill: turquoise;
+                        .card-2{
+                            background-color:  #110f25;
+                            padding: 18px 32px;
+                            border: 1px solid #444DDA;
+                            border-radius: 6px;
+                            margin: 10px 16px;
+                            margin-top: 10px;
+                            h5{
+                                border-bottom: 1px solid grey;
+                                font-size: 15px;
+                                color: white;
+                                font-weight: 500;
+                                padding-bottom: 16px;
+                                margin: 14px 0px;
+                            }
+                            li{
+                                font-size: 15px;
+                                color:#9594a5; 
+                                line-height: 32px;
+                                font-weight: 600;
+                            }
+                            .card-icon-2{
+                                circle{
+                                    fill: turquoise;
+                                }
                             }
                         }
                     }
@@ -3139,6 +3166,7 @@
                         font-size: 24px;
                         text-align: center;
                     }
+                    
                     p{
                         font-weight: 400;
                         font-size: 14px;

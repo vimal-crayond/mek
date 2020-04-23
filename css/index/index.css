@@ -65,6 +65,7 @@
 .mekkanos .main-bg .nav .nav-bg .dropdown-menu .dropdown-item {
   color: white;
   padding: 12px 22px;
+  font-size: 14px;
 }
 
 .mekkanos .main-bg .nav .nav-bg .dropdown-menu .dropdown-item:hover {
@@ -99,6 +100,14 @@
 
 .mekkanos .main-bg .nav .nav-bg form .get-started:hover {
   background-color: #1420d2;
+}
+
+.mekkanos .main-bg .nav .nav-bg form .get-started a {
+  color: white;
+}
+
+.mekkanos .main-bg .nav .nav-bg form .get-started a:hover {
+  text-decoration: none;
 }
 
 .mekkanos .main-bg .video-text .header-text {
@@ -203,6 +212,10 @@
   color: white;
   font-size: 28px;
   font-family: normalbold;
+}
+
+.mekkanos .main-bg .digital-worker .p {
+  margin: 15px auto !important;
 }
 
 .mekkanos .main-bg .digital-worker p {
@@ -654,6 +667,7 @@
 .services .main-bg .nav .nav-bg .dropdown-menu .dropdown-item {
   color: white;
   padding: 12px 22px;
+  font-size: 14px;
 }
 
 .services .main-bg .nav .nav-bg .dropdown-menu .dropdown-item:hover {
@@ -687,6 +701,14 @@
 
 .services .main-bg .nav .nav-bg form .get-started:hover {
   background-color: #1420d2;
+}
+
+.services .main-bg .nav .nav-bg form .get-started a {
+  color: white;
+}
+
+.services .main-bg .nav .nav-bg form .get-started a:hover {
+  text-decoration: none;
 }
 
 .services .solution {
@@ -2743,6 +2765,9 @@
     color: white;
     font-size: 24px;
   }
+  .mekkanos .main-bg .digital-worker .p {
+    margin: 12px auto !important;
+  }
   .mekkanos .main-bg .digital-worker p {
     font-weight: 400;
     font-size: 14px;
@@ -2814,13 +2839,13 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .mekkanos .solution .solution-card .card-padding .card {
+  .mekkanos .solution .solution-card .card-padding a .card {
     background-color: #110f25;
     padding: 18px 32px;
     border-radius: 6px;
     margin: 20px 16px;
   }
-  .mekkanos .solution .solution-card .card-padding .card h5 {
+  .mekkanos .solution .solution-card .card-padding a .card h5 {
     border-bottom: 1px solid grey;
     font-size: 16px;
     color: white;
@@ -2828,19 +2853,19 @@
     padding-bottom: 16px;
     margin: 14px 0px;
   }
-  .mekkanos .solution .solution-card .card-padding .card li {
+  .mekkanos .solution .solution-card .card-padding a .card li {
     font-size: 15px;
     color: #9594a5;
     line-height: 32px;
     font-weight: 600;
   }
-  .mekkanos .solution .solution-card .card-padding .card .card-icon-1 circle {
+  .mekkanos .solution .solution-card .card-padding a .card .card-icon-1 circle {
     fill: #454cbf;
   }
-  .mekkanos .solution .solution-card .card-padding .card .card-icon-4 circle {
+  .mekkanos .solution .solution-card .card-padding a .card .card-icon-4 circle {
     fill: #ff1616;
   }
-  .mekkanos .solution .solution-card .card-padding .card-2 {
+  .mekkanos .solution .solution-card .card-padding a .card-2 {
     background-color: #110f25;
     padding: 18px 32px;
     border: 1px solid #444DDA;
@@ -2848,7 +2873,7 @@
     margin: 10px 16px;
     margin-top: 10px;
   }
-  .mekkanos .solution .solution-card .card-padding .card-2 h5 {
+  .mekkanos .solution .solution-card .card-padding a .card-2 h5 {
     border-bottom: 1px solid grey;
     font-size: 15px;
     color: white;
@@ -2856,13 +2881,13 @@
     padding-bottom: 16px;
     margin: 14px 0px;
   }
-  .mekkanos .solution .solution-card .card-padding .card-2 li {
+  .mekkanos .solution .solution-card .card-padding a .card-2 li {
     font-size: 15px;
     color: #9594a5;
     line-height: 32px;
     font-weight: 600;
   }
-  .mekkanos .solution .solution-card .card-padding .card-2 .card-icon-2 circle {
+  .mekkanos .solution .solution-card .card-padding a .card-2 .card-icon-2 circle {
     fill: turquoise;
   }
   .mekkanos .service-bg {
