@@ -166,12 +166,21 @@
   $(document).ready(function(){
     $(".service-list").hide();
     $(".solution-list").hide();
-    $("#service").click(function(){
-      $(".service-list").slideToggle();
+    $("#service-arrow").click(function(){
+      $("#solution-arrow").removeClass("fa fa-sort-up");
+      $("#solution-arrow").addClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-up");
+      
+      $(".service-list").slideToggle("slow");
       $(".solution-list").slideUp();
     });
-    $("#solution").click(function(){
-      $(".solution-list").slideToggle();
+    $("#solution-arrow").click(function(){
+      $("#service-arrow").removeClass("fa fa-sort-up");
+      $("#service-arrow").addClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-up");
+      $(".solution-list").slideToggle("slow");
       $(".service-list").slideUp();
     });
     $("#solution-hover").hover(function(){
@@ -180,25 +189,35 @@
     });
     $("#solution-dropdown").mouseover(function(){
       $("#solution-dropdown").show();
+      $("#navbar").css("background-color","#110f25");
     });
     $("#solution-dropdown").mouseout(function(){
       $("#solution-dropdown").hide();
+      $("#navbar").css("background-color","transparent");
     });
+    
     $("#digital-hover").mouseover(function(){
       $("#service-dropdown").hide();
     })
     $("#pricing-hover").mouseover(function(){
       $("#solution-dropdown").hide();
     })
+
+    $(".menu-btn").click(function(){
+      $("body").toggleClass("no-scroll");
+    });
+
     $("#service-hover").mouseover(function(){
       $("#service-dropdown").show();
       $("#solution-dropdown").hide();
     });
     $("#service-dropdown").mouseover(function(){
       $("#service-dropdown").show();
+      $("#navbar").css("background-color","#110f25");
     });
     $("#service-dropdown").mouseout(function(){
       $("#service-dropdown").hide();
+      $("#navbar").css("background-color","transparent");
     });
   });
  

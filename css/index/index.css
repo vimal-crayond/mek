@@ -1508,18 +1508,18 @@
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -200px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -200px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -2107,18 +2107,18 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -200px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -200px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -2879,7 +2879,7 @@
     transition: max-height .2s ease-out;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div {
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: -150px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div form {
@@ -2914,25 +2914,25 @@
     min-width: 75px;
     margin: .8em 0;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -3478,7 +3478,7 @@
     z-index: 1;
     background-color: #110f25 !important;
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 22px;
     padding-right: 14px;
     padding-bottom: 0px;
     width: 100%;
@@ -3573,18 +3573,18 @@
     position: relative;
   }
   .services .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .services .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .mb-nav .top-nav .menu .div .service-list a {
@@ -4258,7 +4258,7 @@
     z-index: 1;
     background-color: #110f25 !important;
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 22px;
     padding-right: 14px;
     padding-bottom: 0px;
     width: 100%;
@@ -4353,18 +4353,18 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -4640,18 +4640,18 @@
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -5282,7 +5282,7 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
     top: 0px;
     right: -176px;
@@ -5291,7 +5291,7 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
     top: 0px;
     right: -176px;
@@ -5513,7 +5513,7 @@
     transition: max-height .2s ease-out;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div {
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: -150px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div form {
@@ -5548,25 +5548,25 @@
     min-width: 75px;
     margin: .8em 0;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -138px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -138px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -5635,7 +5635,7 @@
   .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  .mekkanos .main-bg .nav .navbar {
+  .mekkanos .main-bg .nav {
     display: none;
   }
   .mekkanos .main-bg .video-text .header-text {
@@ -6167,18 +6167,18 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -6444,18 +6444,18 @@
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -162px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -7313,18 +7313,18 @@
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -74px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -74px;
   }
   .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
@@ -7963,18 +7963,18 @@
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #service .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -74px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution .fa {
-    margin-top: 14px;
+    margin-top: 10px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: -74px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div .service-list a {

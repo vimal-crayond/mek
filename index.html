@@ -539,12 +539,19 @@
     $(".service-list").hide();
     $(".solution-list").hide();
     $("#service-arrow").click(function(){
-      // $(this).removeClass("fa-sort-down");
-      // $(this).removeClass("fa-sort-up");
+      $("#solution-arrow").removeClass("fa fa-sort-up");
+      $("#solution-arrow").addClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-up");
+      
       $(".service-list").slideToggle();
       $(".solution-list").slideUp();
     });
     $("#solution-arrow").click(function(){
+      $("#service-arrow").removeClass("fa fa-sort-up");
+      $("#service-arrow").addClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-down");
+      $(this).toggleClass("fa fa-sort-up");
       $(".solution-list").slideToggle();
       $(".service-list").slideUp();
     });
