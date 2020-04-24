@@ -568,7 +568,9 @@
       $("#solution-dropdown").hide();
     })
 
-
+    $(".menu-btn").click(function(){
+      $("body").toggleClass("no-scroll");
+    });
 
     $("#service-hover").mouseover(function(){
       $("#service-dropdown").show();
@@ -592,9 +594,7 @@
     });
     }); 
 
-    $(".menu-btn").click(function(){
-      $("body").toggleClass("no-scroll");
-    });
+    
     
     
     

@@ -3478,8 +3478,7 @@
     z-index: 1;
     background-color: #110f25 !important;
     padding-top: 10px;
-    padding-left: 10px;
-    margin-left: -10px;
+    padding-left: 30px;
     padding-right: 14px;
     padding-bottom: 0px;
     width: 100%;
@@ -3533,7 +3532,7 @@
   }
   .services .mb-nav .top-nav .menu .div {
     margin-top: 75px;
-    margin-left: -150px;
+    margin-left: -190px;
   }
   .services .mb-nav .top-nav .menu .div form {
     margin-top: 0px !important;
@@ -3555,8 +3554,6 @@
     background-color: #444DDA;
     color: white;
     font-weight: 600;
-    font-size: 16px;
-    padding: 5px 6px;
   }
   .services .mb-nav .top-nav .menu .div form a {
     color: white;
@@ -3591,10 +3588,10 @@
     right: -162px;
   }
   .services .mb-nav .top-nav .menu .div .service-list a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .services .mb-nav .top-nav .menu .div .solution-list a {
-    font-size: 13px;
+    font-size: 14px;
   }
   .services .mb-nav .top-nav .logo {
     display: inline-block;
@@ -6075,7 +6072,7 @@
     z-index: 1;
     background-color: #110f25 !important;
     padding-top: 10px;
-    padding-left: 0px;
+    padding-left: 10px;
     padding-right: 14px;
     padding-bottom: 0px;
     width: 100%;
@@ -6128,8 +6125,8 @@
     transition: max-height .2s ease-out;
   }
   .services .main-bg .mb-nav .top-nav .menu .div {
-    margin-top: 100px;
-    margin-left: -150px;
+    margin-top: 75px;
+    margin-left: -190px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div form {
     margin-top: 0px !important;
@@ -6163,7 +6160,7 @@
     min-width: 75px;
     margin: .8em 0;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #service {
@@ -6173,7 +6170,7 @@
     margin-top: 14px;
     position: absolute;
     top: 3px;
-    right: -138px;
+    right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
@@ -6182,7 +6179,7 @@
     margin-top: 14px;
     position: absolute;
     top: 3px;
-    right: -138px;
+    right: -162px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div .service-list a {
     font-size: 14px;
@@ -7945,6 +7942,8 @@
     background-color: #444DDA;
     color: white;
     font-weight: 600;
+    font-size: 14px;
+    padding: 5px 5px;
   }
   .services .main-bg .mb-nav .top-nav .menu .div form a {
     color: white;
