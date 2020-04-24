@@ -67,6 +67,13 @@
             border-radius: $radius;
   }
 
+.no-scroll{
+    overflow:hidden;
+}  
+.scroll{
+    overflow:auto;
+}
+
 .mekkanos{
     .main-bg{
         // background-image: url("../../images/Group\ 9.png");
@@ -892,7 +899,6 @@
                             background-color: #444DDA;
                             color: white;
                             font-weight: 600;
-                            
                         }
                     }
                 }
@@ -1323,7 +1329,6 @@
     }
     .services{
         .main-bg{
-            background-image:url("../../videos/backgroundvideo.gif") ;
         background-color:  #110f25;
             
             .nav{
@@ -1492,52 +1497,224 @@
         .main-bg{
             background-image:url("../../videos/backgroundvideo.gif") ;
             background-color:  #110f25;
-            .nav{
-                .nav-bg{
-                    color: white;
-                    margin: 0px;
-                    padding: 10px 44px ;
-                    .navbar-brand{
+            .mb-nav{
+                display: block !important;
+                .top-nav {
+                    position: fixed;
+                    top: 0px;
+                    z-index: 1;
+                    background-color: #110f25 !important;
+                    padding-top: 10px;
+                    padding-left: 30px;
+                    padding-right: 14px;
+                    padding-bottom: 0px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    transition: top .75s ease-in;
+                    background-color: #e8e8e8;
+                    h2{
+                        font-size: 17px;
                         color: white;
-                        padding-top: 0px;
-                        padding-bottom: 0px;
-                        margin-right: 0px;
-                        img{
+                        margin-bottom: 0px;
                         
-                            width: 120px;
+                    }
+                    .navbar-brand{
+                        padding-bottom: 5px;
+                        padding-top: 0px;
+                        img{
+                            width: 160px;
                         }
                     }
-                    .nav-link{
+                    .menu{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        overflow-x: scroll;
+                        max-height: 0;
                         color: white;
-                        padding: 10px 8px;
-                        margin: 5px;
-                        font-size:13px;
-                        &:hover{
-                            font-weight: 100;
-                            padding: 10px 7.8px;
-                            cursor: pointer;
-                        }
-                    }
-                    .dropdown-menu{
-                        background-color:  #110f25;
-                        margin-top: 10px;
-                        border-bottom-left-radius: 8px;
-                        border-bottom-right-radius: 8px;
-                        min-width: 100px;
-                        .dropdown-item{
-                            color: white;
-                            padding: 10px 12px;
-                            font-size: 13px;
+                        padding-left:0px ;
+                        margin: 0px !important;
+                        transition: max-height .2s ease-out;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                    margin-bottom: 20px;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
+                                }
+                            }
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
+                            }
                             
-                            &:hover{
-                               background-color: #110f25;
-                               padding-left:10px;
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -200px;
+                                }
+                            }
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -200px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
+                
+                    .logo{
+                        display: inline-block;
+                        width: 150px;
+                        color: white;
+                    }
+                
+                    .menu-icon{
+                        cursor: pointer;
+                        display: inline-block;
+                        padding: 22px 16px;
+                
+                        .navicon{
+                            background: white;
+                            display: block;
+                            height: 2px;
+                            position: relative;
+                            width: 1.625rem;
+                
+                            &:before, &:after{
+                                background: white;
+                                content: '';
+                                display: block;
+                                height: 100%;
+                                position: absolute;
+                                transition: all .2s ease-out;
+                                width: 100%;
+                            }
+                
+                            &:before{
+                                top: 7px;
+                            }
+                
+                            &:after{
+                                top: -7px;
+                            }
+                        }
+                    }
+                
+                    .menu-btn{
+                        display: none;
+                
+                        &:checked ~ .menu{
+                            max-height: 800px;
+                            height: 510px;
+                            overflow: scroll;
+                            display: flex;
+                            align-items: center;
+                        }
+                
+                        &:checked ~ .menu-icon .navicon{
+                            background: transparent;
+                
+                            &:before{
+                                transform: rotate(-45deg);
+                            }
+                
+                            &:after{
+                                transform: rotate(45deg);
+                            }
+                        }
+                
+                        &:checked ~ .menu-icon:not(.steps) .navicon{
+                            &:before, &:after{
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav{
+                
+                .navbar{
+                    display: none ;
+                }
+                .nav-bg{
+                    
+                    // height: 300px;
+                    color: white;
+                    margin: 0px;
+                    padding: 10px 32px ;
+                    color: white;
+                    .navbar-brand{
+                        color: white;
+                        
+                    }
+                    .navbar-collapse{
+                        display: none;
+                    }
+                    
+                    .nav-link{
+                        color: white;
+                        padding: 10px 0px;
+                        margin: 0px;
+                        font-size:15px;
+                        
+                    }
                     form{
                         .search-img{
-                            margin: auto 16px;
+                                margin-right:16px;
+                                margin-left: 0px;
                                 border: 1px solid #444DDA;
                                 width: 34px;
                                 height: 34px;
@@ -1980,50 +2157,200 @@
             background-image:url("../../videos/backgroundvideo.gif") ;
             background-color:  #110f25;
             // height: 500px;
-            .nav{
-                .nav-bg{
-                    color: white;
-                    margin: 0px;
-                    padding: 10px 44px ;
-                    .navbar-brand{
+            .mb-nav{
+                display: block !important;
+                .top-nav {
+                    position: fixed;
+                    top: 0px;
+                    z-index: 1;
+                    background-color: #110f25 !important;
+                    padding-top: 10px;
+                    padding-left: 0px;
+                    padding-right: 14px;
+                    padding-bottom: 0px;
+                    margin-left: -20px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    transition: top .75s ease-in;
+                    background-color: #e8e8e8;
+                    h2{
+                        font-size: 17px;
                         color: white;
-                        padding-top: 0px;
-                        padding-bottom: 0px;
-                        margin-right: 0px;
-                        img{
+                        margin-bottom: 0px;
                         
-                            width: 120px;
+                    }
+                    .navbar-brand{
+                        padding-bottom: 5px;
+                        padding-top: 0px;
+                        padding-left:20px ;
+                        img{
+                            width: 160px;
                         }
                     }
-                    .nav-link{
+                    .menu{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        overflow-x: scroll;
+                        max-height: 0;
                         color: white;
-                        padding: 10px 8px;
-                        margin: 5px;
-                        font-size:13px;
-                        &:hover{
-                            padding: 10px 8px;
-                        }
-                    }
-                    form{
-                        .search-img{
-                            margin: auto 16px;
-                                border: 1px solid #444DDA;
-                                width: 34px;
-                                height: 34px;
-                                border-radius:50%;
-                                text-align: center;
-                            img{
-                                margin-top: 4px;
-                                width: 14px;
+                        padding-left:0px ;
+                        margin: 0px !important;
+                        transition: max-height .2s ease-out;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
+                                }
+                            }
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
+                            }
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -200px;
+                                }
+                            }
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -200px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
-                        .get-started{
-                            background-color: #444DDA;
-                            color: white;
-                            font-weight: 600;
+                    }
+                
+                    .logo{
+                        display: inline-block;
+                        width: 150px;
+                        color: white;
+                    }
+                
+                    .menu-icon{
+                        cursor: pointer;
+                        display: inline-block;
+                        padding: 22px 16px;
+                        position:absolute;
+                        right:50px;
+                        top:10px;
+                
+                        .navicon{
+                            background: white;
+                            display: block;
+                            height: 2px;
+                            position: relative;
+                            width: 1.625rem;
+                
+                            &:before, &:after{
+                                background: white;
+                                content: '';
+                                display: block;
+                                height: 100%;
+                                position: absolute;
+                                transition: all .2s ease-out;
+                                width: 100%;
+                            }
+                
+                            &:before{
+                                top: 7px;
+                            }
+                
+                            &:after{
+                                top: -7px;
+                            }
+                        }
+                    }
+                
+                    .menu-btn{
+                        display: none;
+                
+                        &:checked ~ .menu{
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
+                        }
+                
+                        &:checked ~ .menu-icon .navicon{
+                            background: transparent;
+                
+                            &:before{
+                                transform: rotate(-45deg);
+                            }
+                
+                            &:after{
+                                transform: rotate(45deg);
+                            
+
+                            }
+                        }
+                
+                        &:checked ~ .menu-icon:not(.steps) .navicon{
+                            &:before, &:after{
+                                top: 0;
+                            }
                         }
                     }
                 }
+            }
+            .nav{
+                display: none;
             }
         }  
         .solution{
@@ -2758,47 +3085,87 @@
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                            color: white;
-            
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
                         }
                     }
                 
@@ -2844,7 +3211,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -3402,7 +3772,8 @@
                 z-index: 1;
                 background-color: #110f25 !important;
                 padding-top: 10px;
-                padding-left: 30px;
+                padding-left: 10px;
+                margin-left: -10px;
                 padding-right: 14px;
                 padding-bottom: 0px;
                 width: 100%;
@@ -3427,47 +3798,89 @@
                 }
                 .menu{
                     list-style: none;
-                    overflow: hidden;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     width: 100%;
+                    overflow-x: scroll;
                     max-height: 0;
                     color: white;
                     padding-left:0px ;
                     margin: 0px !important;
                     transition: max-height .2s ease-out;
-                    form{
-                        margin-top: 0px !important;
-                        .search-img{
-                                margin-right:16px;
-                                margin-left: 0px;
-                                border: 1px solid #444DDA;
-                                width: 34px;
-                                height: 34px;
-                                border-radius:50%;
-                                text-align: center;
-                            img{
-                                margin-top: 4px;
-                                width: 14px;
+                    .div{
+                        margin-top:75px;
+                        margin-left:-150px;
+                        form{
+                            margin-top: 0px !important;
+                            .search-img{
+                                    margin-right:16px;
+                                    margin-left: 0px;
+                                    border: 1px solid #444DDA;
+                                    width: 34px;
+                                    height: 34px;
+                                    border-radius:50%;
+                                    text-align: center;
+                                img{
+                                    margin-top: 4px;
+                                    width: 14px;
+                                }
+                            }
+                            .get-started{
+                                background-color: #444DDA;
+                                color: white;
+                                font-weight: 600;
+                                font-size: 16px;
+                                padding: 5px 6px;
+                            }
+                            a{
+                                color:white ;
+                                &:hover{
+                                    text-decoration:none;
+                                }
                             }
                         }
-                        .get-started{
-                            background-color: #444DDA;
-                            color: white;
-                            font-weight: 600;
+                
+                        li{
+                            a{
+                                display: inline-block;
+                                min-width: 75px;
+                                margin: .8em 0;
+                                text-decoration: none;
+                                font-size: 16px;
+                                color: white;
+                
+                            }
                         }
-                    }
-            
-                    li a{
-                        display: inline-block;
-                        min-width: 75px;
-                        margin: .8em 0;
-                        transition: 1s all;
-                        text-decoration: none;
-                        font-size: 16px;
-                        color: white;
-        
+                        
+                        #service{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 3px;
+                                right: -162px;
+                            }
+                        }
+                        #solution{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 3px;
+                                right: -162px;
+                            }
+                        }
+                        .service-list{
+                            a{
+                                font-size:13px;
+                            }
+                        }
+                        .solution-list{
+                            a{
+                                font-size:13px;
+                            }
+                        }
                     }
                 }
             
@@ -3513,7 +3926,10 @@
                     display: none;
             
                     &:checked ~ .menu{
-                        max-height: 300px;
+                        max-height: 170vh;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
                     }
             
                     &:checked ~ .menu-icon .navicon{
@@ -3537,8 +3953,9 @@
             }
         }
         .nav{
+            display: none ;
             .navbar{
-                display: none ;
+                
             }
         }  
         .solution{
@@ -3661,53 +4078,52 @@
 @media only screen and (max-width: 415px) {
     
     .mekkanos{
-        .main-bg{
-            background-image:url("../../videos/backgroundvideo.gif") ;
-            background-color: #110f25;
-            // background-size: cover;
-            // height: 400px;
-            
-            .mb-nav{
-                display: block !important;
-                .top-nav {
-                    position: fixed;
-                    top: 0px;
-                    z-index: 1;
-                    background-color: #110f25 !important;
-                    padding-top: 10px;
-                    padding-left: 30px;
-                    padding-right: 14px;
-                    padding-bottom: 0px;
-                    width: 100%;
+        .mb-nav{
+            display: block !important;
+            .top-nav {
+                position: fixed;
+                top: 0px;
+                z-index: 1;
+                background-color: #110f25 !important;
+                padding-top: 10px;
+                padding-left: 30px;
+                padding-right: 14px;
+                padding-bottom: 0px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                transition: top .75s ease-in;
+                background-color: #e8e8e8;
+                h2{
+                    font-size: 17px;
+                    color: white;
+                    margin-bottom: 0px;
+                    
+                }
+                .navbar-brand{
+                    padding-bottom: 5px;
+                    padding-top: 0px;
+                    img{
+                        width: 160px;
+                    }
+                }
+                .menu{
+                    list-style: none;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    transition: top .75s ease-in;
-                    background-color: #e8e8e8;
-                    h2{
-                        font-size: 17px;
-                        color: white;
-                        margin-bottom: 0px;
-                        
-                    }
-                    .navbar-brand{
-                        padding-bottom: 5px;
-                        padding-top: 0px;
-                        
-                    }
-                    .menu{
-                        list-style: none;
-                        overflow: hidden;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        width: 100%;
-                        max-height: 0;
-                        color: white;
-                        padding-left:0px ;
-                        margin: 0px !important;
-                        transition: max-height .2s ease-out;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    overflow-x: scroll;
+                    max-height: 0;
+                    color: white;
+                    padding-left:0px ;
+                    margin: 0px !important;
+                    transition: max-height .2s ease-out;
+                    .div{
+                        margin-top:100px;
+                        margin-left:-150px;
                         form{
                             margin-top: 0px !important;
                             .search-img{
@@ -3728,271 +4144,124 @@
                                 color: white;
                                 font-weight: 600;
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
-                            }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
-                            }
-                        }
-                    }
-                
-                    .logo{
-                        display: inline-block;
-                        width: 150px;
-                        color: white;
-                    }
-                
-                    .menu-icon{
-                        cursor: pointer;
-                        display: inline-block;
-                        padding: 22px 16px;
-                
-                        .navicon{
-                            background: white;
-                            display: block;
-                            height: 2px;
-                            position: relative;
-                            width: 1.625rem;
-                
-                            &:before, &:after{
-                                background: white;
-                                content: '';
-                                display: block;
-                                height: 100%;
-                                position: absolute;
-                                transition: all .2s ease-out;
-                                width: 100%;
-                            }
-                
-                            &:before{
-                                top: 7px;
-                            }
-                
-                            &:after{
-                                top: -7px;
-                            }
-                        }
-                    }
-                
-                    .menu-btn{
-                        display: none;
-                
-                        &:checked ~ .menu{
-                            max-height: 300px;
-                        }
-                
-                        &:checked ~ .menu-icon .navicon{
-                            background: transparent;
-                
-                            &:before{
-                                transform: rotate(-45deg);
-                            }
-                
-                            &:after{
-                                transform: rotate(45deg);
-                            }
-                        }
-                
-                        &:checked ~ .menu-icon:not(.steps) .navicon{
-                            &:before, &:after{
-                                top: 0;
-                            }
-                        }
-                    }
-                }
-            }
-            .nav{
-                
-                .navbar{
-                    display: none ;
-                }
-                .nav-bg{
-                    
-                    // height: 300px;
-                    color: white;
-                    margin: 0px;
-                    padding: 10px 32px ;
-                    color: white;
-                    .navbar-brand{
-                        color: white;
-                        
-                    }
-                    .navbar-collapse{
-                        display: none;
-                    }
-                    
-                    .nav-link{
-                        color: white;
-                        padding: 10px 0px;
-                        margin: 0px;
-                        font-size:15px;
-                    }
-                    form{
-                        .search-img{
-                                margin-right:16px;
-                                margin-left: 0px;
-                                border: 1px solid #444DDA;
-                                width: 34px;
-                                height: 34px;
-                                border-radius:50%;
-                                text-align: center;
-                            img{
-                                margin-top: 4px;
-                                width: 14px;
-                            }
-                        }
-                        .get-started{
-                            background-color: #444DDA;
-                            color: white;
-                            font-weight: 600;
-                        }
-                    }
-                }
-            }
-            
-            .video-text{
-                
-                .header-text{
-                    color: white;
-                    width: 90%;
-                    margin:60px  auto;
-                    padding-top: 20px;
-                    
-                    .text{
-                        display: flex;
-                        align-items: center;
-                        margin-top: 25px;
-                        h1{
-                            font-size: 30px;
-                            padding-right: 0px;
-                            line-height: 50px;
-    
-                        }
-                        h4{
-                            font-weight: 400;
-                            font-size: 16px;
-                            color: #9E9DBF;
-                            line-height: 34px;
-                        }
-                        
-                        .buttons{
-                            
-                            .try-for-free{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
-                                padding: 8px 12px;
-                                font-size: 15px;
-                            }
-                            .demo{
-                                background-color: #24242d;
-                                color: white;
-                                font-weight: 600;
-                                padding: 8px 10px;
-                                font-size: 16px;
-                                margin-left: 15px;
-                            }
-                        }
-                        
-                    }
-                    .header-img{
-                        display: none;
-                      
-                    }
-                }
-            }
-            .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
-                height: 200px;
-                width: 40%;
-                position: absolute;
-                bottom: 28%;
-                background-size: cover;
-                margin-left: 60%;
-            }
-            .mountain-bg{
-                background-image: url("../../images/mountain.png");
-                height: 75px;
-                background-position: bottom;
-            }
-            .digital-worker{
-                padding: 50px 0px;
-                background-color:  #110f25;
-                h6{
-                    margin-top: 20px;
-                    color: #444DDA;
-                    font-size: 12px;
-                }
-                .flex{
-                display: flex;
-                .digital-div-1{
-                    width: 25%;
-                    padding: 0px 4px;
-
-                }
-                .digital-div-2{
-                    width: 50%;
-                    margin: auto;
-                    padding: 0px 4px;
-
-                }
-                .digital-div-3{
-                    width: 25%;
-                    padding: 0px 4px;
-                }
-                }
-                h2{
-                    color: white;
-                    font-size: 24px;
-                }
-                p{
-                    font-weight: 400;
-                    font-size: 14px;
-                    color: #9E9DBF;
-                    width: 80%;
-                    margin: auto;
-                    line-height: 26px;
-                    margin-bottom: 20px;
-                }
-                .cards{
-                    .Cards{
-                        width: 90%;
-                        margin: auto;
-                        .card{
-                            background-color: #20232f ;
-                            margin: 20px auto; 
-                            .card-text{
-                                margin: 8px auto;
-                                p{
-                                    font-weight: 400;
-                                    width: 100%;
-                                    margin: auto;
-                                    font-size: 10px;
-                                    font-weight: 600;
-                                    color: #d4d4de; 
-                                    margin-bottom: 0px;
-                                    margin: 5px auto;
-                                    line-height: normal;
+                            a{
+                                color:white ;
+                                &:hover{
+                                    text-decoration:none;
                                 }
                             }
                         }
+                
+                        li{
+                            a{
+                                display: inline-block;
+                                min-width: 75px;
+                                margin: .8em 0;
+                                text-decoration: none;
+                                font-size: 18px;
+                                color: white;
+                
+                            }
+                        }
+                        
+                        #service{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 3px;
+                                right: -162px;
+                            }
+                        }
+                        #solution{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 3px;
+                                right: -162px;
+                            }
+                        }
+                        .service-list{
+                            a{
+                                font-size:14px;
+                            }
+                        }
+                        .solution-list{
+                            a{
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+            
+                .logo{
+                    display: inline-block;
+                    width: 150px;
+                    color: white;
+                }
+            
+                .menu-icon{
+                    cursor: pointer;
+                    display: inline-block;
+                    padding: 22px 16px;
+            
+                    .navicon{
+                        background: white;
+                        display: block;
+                        height: 2px;
+                        position: relative;
+                        width: 1.625rem;
+            
+                        &:before, &:after{
+                            background: white;
+                            content: '';
+                            display: block;
+                            height: 100%;
+                            position: absolute;
+                            transition: all .2s ease-out;
+                            width: 100%;
+                        }
+            
+                        &:before{
+                            top: 7px;
+                        }
+            
+                        &:after{
+                            top: -7px;
+                        }
+                    }
+                }
+            
+                .menu-btn{
+                    display: none;
+            
+                    &:checked ~ .menu{
+                        max-height: 170vh;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                    }
+            
+                    &:checked ~ .menu-icon .navicon{
+                        background: transparent;
+            
+                        &:before{
+                            transform: rotate(-45deg);
+                        }
+            
+                        &:after{
+                            transform: rotate(45deg);
+                        }
+                    }
+            
+                    &:checked ~ .menu-icon:not(.steps) .navicon{
+                        &:before, &:after{
+                            top: 0;
+                        }
                     }
                 }
             }
-            
         }
         .solution{
             background-image: url("../../images/Group\ 9.png");
@@ -4361,57 +4630,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:75px;
+                            margin-left:-190px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 16px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
@@ -4458,7 +4762,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -4592,7 +4899,7 @@
         }  
     }
 }
-// iphone 5s/e
+// iphone 5/ES
 @media only screen and (max-width: 380px) {
     
     .mekkanos{
@@ -4629,57 +4936,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
@@ -4726,7 +5068,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -5346,8 +5691,25 @@
                             }
                 
                             &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
                                 color: white
+                            }
+                        }
+                        #service{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 0px;
+                                right:-176px;
+                            }
+                        }
+                        #solution{
+                            position: relative;
+                            .fa{
+                                margin-top: 14px;
+                                position: absolute;
+                                top: 0px;
+                                right:-176px;
                             }
                         }
                     }
@@ -5562,57 +5924,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -138px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -138px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
@@ -5659,7 +6056,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -5687,48 +6087,7 @@
                 .navbar{
                     display: none ;
                 }
-                .nav-bg{
-                    
-                    // height: 300px;
-                    color: white;
-                    margin: 0px;
-                    padding: 10px 32px ;
-                    color: white;
-                    .navbar-brand{
-                        color: white;
-                        
-                    }
-                    .navbar-collapse{
-                        display: none;
-                    }
-                    
-                    .nav-link{
-                        color: white;
-                        padding: 10px 0px;
-                        margin: 0px;
-                        font-size:15px;
-                    }
-                    form{
-                        .search-img{
-                                margin-right:16px;
-                                margin-left: 0px;
-                                border: 1px solid #444DDA;
-                                width: 34px;
-                                height: 34px;
-                                border-radius:50%;
-                                text-align: center;
-                            img{
-                                margin-top: 4px;
-                                width: 14px;
-                            }
-                        }
-                        .get-started{
-                            background-color: #444DDA;
-                            color: white;
-                            font-weight: 600;
-                        }
-                    }
-                }
+                
             }
             .video-text{
                 
@@ -6210,7 +6569,7 @@
                     z-index: 1;
                     background-color: #110f25 !important;
                     padding-top: 10px;
-                    padding-left: 30px;
+                    padding-left: 0px;
                     padding-right: 14px;
                     padding-bottom: 0px;
                     width: 100%;
@@ -6229,57 +6588,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -138px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -138px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
@@ -6326,7 +6720,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -6483,57 +6880,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
                             }
                         }
                     }
@@ -6580,7 +7012,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -7171,7 +7606,6 @@
                             }
                 
                             &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
                                 color: white
                             }
                         }
@@ -7363,57 +7797,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-75px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -74px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -74px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:11px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:11px;
+                                }
                             }
                         }
                     }
@@ -7460,7 +7929,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
@@ -8012,7 +8484,7 @@
                     z-index: 1;
                     background-color: #110f25 !important;
                     padding-top: 10px;
-                    padding-left: 30px;
+                    padding-left: 0px;
                     padding-right: 14px;
                     padding-bottom: 0px;
                     width: 100%;
@@ -8031,57 +8503,92 @@
                     .navbar-brand{
                         padding-bottom: 5px;
                         padding-top: 0px;
-                        
+                        img{
+                            width: 160px;
+                        }
                     }
                     .menu{
                         list-style: none;
-                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         width: 100%;
+                        overflow-x: scroll;
                         max-height: 0;
                         color: white;
                         padding-left:0px ;
                         margin: 0px !important;
                         transition: max-height .2s ease-out;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-75px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
                                 }
                             }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    color: white;
+                    
+                                }
                             }
-                        }
-                
-                        li a{
-                            display: inline-block;
-                            min-width: 75px;
-                            margin: .8em 0;
-                            transition: 1s all;
-                            text-decoration: none;
-                            font-size: 16px;
-                
-                            &:link, &:visited{
-                                color: white;
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -74px;
+                                }
                             }
-                
-                            &:focus, &:hover, &:active{
-                                transform: scale(1.1) rotate(-2deg);
-                                color: white
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -74px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:11px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:11px;
+                                }
                             }
                         }
                     }
@@ -8128,7 +8635,10 @@
                         display: none;
                 
                         &:checked ~ .menu{
-                            max-height: 300px;
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
                         }
                 
                         &:checked ~ .menu-icon .navicon{
