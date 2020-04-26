@@ -119,8 +119,9 @@
 }
 
 .mekkanos .main-bg .video-text .header-text {
-  padding-top: 150px;
+  padding-top: 100px;
   color: white;
+  padding-bottom: 60px;
 }
 
 .mekkanos .main-bg .video-text .header-text .text {
@@ -207,8 +208,8 @@
 }
 
 .mekkanos .main-bg .digital-worker {
-  padding: 34px 0px;
-  background-color: #110f25;
+  padding: 50px 0px;
+  background-color: black;
 }
 
 .mekkanos .main-bg .digital-worker h6 {
@@ -880,7 +881,8 @@
     font-weight: 600;
   }
   .mekkanos .main-bg .video-text .header-text {
-    padding-top: 130px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     color: white;
   }
   .mekkanos .main-bg .video-text .header-text .text {
@@ -893,14 +895,14 @@
     margin-top: 16px;
   }
   .mekkanos .main-bg .video-text .header-text .text h1 {
-    font-size: 40px;
+    font-size: 36px;
     padding-right: 38px;
     line-height: 70px;
     font-family: normalbold;
   }
   .mekkanos .main-bg .video-text .header-text .text h4 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #9E9DBF;
     line-height: 40px;
     font-family: book;
@@ -928,8 +930,8 @@
     height: 250px;
   }
   .mekkanos .main-bg .digital-worker {
-    padding: 25px 0px;
-    background-color: #110f25;
+    padding: 50px 0px;
+    background-color: black;
   }
   .mekkanos .main-bg .digital-worker h6 {
     color: #444DDA;
@@ -1631,7 +1633,7 @@
   .mekkanos .main-bg .video-text .header-text {
     color: white;
     margin-top: 10px;
-    padding-top: 125px;
+    padding-top: 105px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -1640,7 +1642,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 16px;
+    margin-top: 46px;
   }
   .mekkanos .main-bg .video-text .header-text .text h1 {
     font-size: 30px;
@@ -1649,7 +1651,7 @@
   }
   .mekkanos .main-bg .video-text .header-text .text h4 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     color: #9E9DBF;
     line-height: 34px;
   }
@@ -1669,7 +1671,7 @@
     margin-left: 26px;
   }
   .mekkanos .main-bg .video-text .header-text .header-img img {
-    padding-left: 30px;
+    padding-left: 0px;
     width: 100%;
   }
   .mekkanos .main-bg .mountain-bg {
@@ -1678,8 +1680,7 @@
     background-position: bottom;
   }
   .mekkanos .main-bg .digital-worker {
-    padding: 35px 0px;
-    background-color: #110f25;
+    padding: 50px 0px;
   }
   .mekkanos .main-bg .digital-worker h6 {
     color: #444DDA;
@@ -3044,7 +3045,7 @@
     color: white;
     width: 90%;
     margin: 60px  auto;
-    padding-top: 46px;
+    padding-top: 90px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -3101,7 +3102,6 @@
   }
   .mekkanos .main-bg .digital-worker {
     padding: 50px 0px;
-    background-color: #110f25;
   }
   .mekkanos .main-bg .digital-worker h6 {
     margin-top: 20px;
@@ -4819,7 +4819,6 @@
   }
   .mekkanos .main-bg .digital-worker {
     padding: 50px 0px;
-    background-color: #110f25;
   }
   .mekkanos .main-bg .digital-worker h6 {
     margin-top: 20px;
@@ -5642,7 +5641,7 @@
     color: white;
     width: 90%;
     margin: 60px  auto;
-    padding-top: 20px;
+    padding-top: 75px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -5698,7 +5697,7 @@
   }
   .mekkanos .main-bg .digital-worker {
     padding: 50px 0px;
-    background-color: #110f25;
+    background-color: black;
   }
   .mekkanos .main-bg .digital-worker h6 {
     margin-top: 20px;
@@ -6574,6 +6573,7 @@
     width: 100%;
     color: white;
     margin: 70px auto;
+    margin-top: 75px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -6630,7 +6630,7 @@
   }
   .mekkanos .main-bg .digital-worker {
     padding: 46px 0px;
-    background-color: #110f25;
+    background-color: black;
   }
   .mekkanos .main-bg .digital-worker h6 {
     margin-top: 20px;
@@ -7436,7 +7436,7 @@
     color: white;
     width: 90%;
     margin: 60px  auto;
-    padding-top: 20px;
+    padding-top: 75px;
   }
   .mekkanos .main-bg .video-text .header-text .text {
     display: -webkit-box;
@@ -7485,14 +7485,9 @@
     background-size: cover;
     margin-left: 60%;
   }
-  .mekkanos .main-bg .mountain-bg {
-    background-image: url("../../images/mountain.png");
-    height: 75px;
-    background-position: bottom;
-  }
   .mekkanos .main-bg .digital-worker {
     padding: 50px 0px;
-    background-color: #110f25;
+    background-color: black;
   }
   .mekkanos .main-bg .digital-worker h6 {
     margin-top: 20px;
