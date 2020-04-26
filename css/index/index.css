@@ -3952,7 +3952,7 @@
     position: absolute;
     bottom: 90px;
     background-size: cover;
-    margin-left: 62%;
+    margin-left: 67%;
   }
   .mekkanos .solution {
     background-image: url("../../images/Group 9.png");
@@ -5694,11 +5694,11 @@
   .mekkanos .main-bg .header-bg {
     background-image: url("../../images/image (1).png");
     height: 200px;
-    width: 30%;
+    width: 28%;
     position: absolute;
     bottom: -2%;
     background-size: cover;
-    margin-left: 69%;
+    margin-left: 71%;
   }
   .mekkanos .main-bg .mountain-bg {
     background-image: url("../../images/mountain.png");
@@ -7487,11 +7487,11 @@
   }
   .mekkanos .main-bg .header-bg {
     height: 200px;
-    width: 40%;
+    width: 18%;
     position: absolute;
-    bottom: 0%;
+    bottom: -22%;
     background-size: cover;
-    margin-left: 60%;
+    margin-left: 82%;
   }
   .mekkanos .main-bg .digital-worker {
     padding: 50px 0px;
