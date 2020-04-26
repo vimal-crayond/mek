@@ -48,7 +48,7 @@
 }
 
 .mekkanos .main-bg .nav .nav-bg .navbar-brand img {
-  width: 160px;
+  width: 185px;
 }
 
 .mekkanos .main-bg .nav .nav-bg .nav-link {
@@ -119,9 +119,9 @@
 }
 
 .mekkanos .main-bg .video-text .header-text {
-  padding-top: 100px;
+  padding-top: 110px;
   color: white;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .mekkanos .main-bg .video-text .header-text .text {
@@ -135,7 +135,7 @@
 }
 
 .mekkanos .main-bg .video-text .header-text .text h1 {
-  font-size: 46px;
+  font-size: 48px;
   padding-right: 10px;
   line-height: 70px;
   font-family: normalbold;
@@ -143,9 +143,9 @@
 
 .mekkanos .main-bg .video-text .header-text .text h4 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   color: #9E9DBF;
-  line-height: 40px;
+  line-height: 44px;
   font-family: book;
 }
 
@@ -851,7 +851,7 @@
     padding-bottom: 0px;
   }
   .mekkanos .main-bg .nav .nav-bg .navbar-brand img {
-    width: 140px;
+    width: 160px;
   }
   .mekkanos .main-bg .nav .nav-bg .nav-link {
     color: white;
