@@ -2384,7 +2384,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url("../../images/Humanoid New1.png");
+    background-image: url("../../images/image (1).png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -3087,13 +3087,13 @@
   }
   .mekkanos .main-bg .header-bg {
     display: block;
-    background-image: url("../../images/Humanoid New1.png");
+    background-image: url("../../images/image (1).png");
     height: 200px;
-    width: 38%;
+    width: 28%;
     position: absolute;
-    bottom: 30px;
+    bottom: 2px;
     background-size: cover;
-    margin-left: 61%;
+    margin-left: 67%;
   }
   .mekkanos .main-bg .mountain-bg {
     background-image: url("../../images/mountain.png");
@@ -3760,10 +3760,10 @@
 }
 
 @media only screen and (max-width: 415px) {
-  .mekkanos .mb-nav {
+  .mekkanos .main-bg .mb-nav {
     display: block !important;
   }
-  .mekkanos .mb-nav .top-nav {
+  .mekkanos .main-bg .mb-nav .top-nav {
     position: fixed;
     top: 0px;
     z-index: 1;
@@ -3788,19 +3788,19 @@
     transition: top .75s ease-in;
     background-color: #e8e8e8;
   }
-  .mekkanos .mb-nav .top-nav h2 {
+  .mekkanos .main-bg .mb-nav .top-nav h2 {
     font-size: 17px;
     color: white;
     margin-bottom: 0px;
   }
-  .mekkanos .mb-nav .top-nav .navbar-brand {
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand {
     padding-bottom: 5px;
     padding-top: 0px;
   }
-  .mekkanos .mb-nav .top-nav .navbar-brand img {
+  .mekkanos .main-bg .mb-nav .top-nav .navbar-brand img {
     width: 160px;
   }
-  .mekkanos .mb-nav .top-nav .menu {
+  .mekkanos .main-bg .mb-nav .top-nav .menu {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3821,14 +3821,14 @@
     -webkit-transition: max-height .2s ease-out;
     transition: max-height .2s ease-out;
   }
-  .mekkanos .mb-nav .top-nav .menu .div {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div {
     margin-top: 100px;
     margin-left: -150px;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form {
     margin-top: 0px !important;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form .search-img {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form .search-img {
     margin-right: 16px;
     margin-left: 0px;
     border: 1px solid #444DDA;
@@ -3837,22 +3837,22 @@
     border-radius: 50%;
     text-align: center;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form .search-img img {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form .search-img img {
     margin-top: 4px;
     width: 14px;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form .get-started {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form .get-started {
     background-color: #444DDA;
     color: white;
     font-weight: 600;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form a {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form a {
     color: white;
   }
-  .mekkanos .mb-nav .top-nav .menu .div form a:hover {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div form a:hover {
     text-decoration: none;
   }
-  .mekkanos .mb-nav .top-nav .menu .div li a {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div li a {
     display: inline-block;
     min-width: 75px;
     margin: .8em 0;
@@ -3860,48 +3860,48 @@
     font-size: 18px;
     color: white;
   }
-  .mekkanos .mb-nav .top-nav .menu .div #service {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div #service {
     position: relative;
   }
-  .mekkanos .mb-nav .top-nav .menu .div #service .fa {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div #service .fa {
     margin-top: 14px;
     position: absolute;
     top: 3px;
     right: -162px;
   }
-  .mekkanos .mb-nav .top-nav .menu .div #solution {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution {
     position: relative;
   }
-  .mekkanos .mb-nav .top-nav .menu .div #solution .fa {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div #solution .fa {
     margin-top: 14px;
     position: absolute;
     top: 3px;
     right: -162px;
   }
-  .mekkanos .mb-nav .top-nav .menu .div .service-list a {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div .service-list a {
     font-size: 14px;
   }
-  .mekkanos .mb-nav .top-nav .menu .div .solution-list a {
+  .mekkanos .main-bg .mb-nav .top-nav .menu .div .solution-list a {
     font-size: 14px;
   }
-  .mekkanos .mb-nav .top-nav .logo {
+  .mekkanos .main-bg .mb-nav .top-nav .logo {
     display: inline-block;
     width: 150px;
     color: white;
   }
-  .mekkanos .mb-nav .top-nav .menu-icon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon {
     cursor: pointer;
     display: inline-block;
     padding: 22px 16px;
   }
-  .mekkanos .mb-nav .top-nav .menu-icon .navicon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon {
     background: white;
     display: block;
     height: 2px;
     position: relative;
     width: 1.625rem;
   }
-  .mekkanos .mb-nav .top-nav .menu-icon .navicon:before, .mekkanos .mb-nav .top-nav .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
     background: white;
     content: '';
     display: block;
@@ -3911,16 +3911,16 @@
     transition: all .2s ease-out;
     width: 100%;
   }
-  .mekkanos .mb-nav .top-nav .menu-icon .navicon:before {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:before {
     top: 7px;
   }
-  .mekkanos .mb-nav .top-nav .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-icon .navicon:after {
     top: -7px;
   }
-  .mekkanos .mb-nav .top-nav .menu-btn {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn {
     display: none;
   }
-  .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu {
     max-height: 170vh;
     height: 100vh;
     display: -webkit-box;
@@ -3930,19 +3930,29 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mekkanos .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .mekkanos .main-bg .mb-nav .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
+  }
+  .mekkanos .main-bg .header-bg {
+    display: block;
+    background-image: url("../../images/image (1).png");
+    height: 200px;
+    width: 28%;
+    position: absolute;
+    bottom: 90px;
+    background-size: cover;
+    margin-left: 62%;
   }
   .mekkanos .solution {
     background-image: url("../../images/Group 9.png");
@@ -4804,7 +4814,7 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url("../../images/Humanoid New1.png");
+    background-image: url("../../images/image (1).png");
     height: 200px;
     width: 40%;
     position: absolute;
@@ -5682,13 +5692,13 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url("../../images/Humanoid New1.png");
+    background-image: url("../../images/image (1).png");
     height: 200px;
-    width: 37%;
+    width: 30%;
     position: absolute;
-    bottom: 14%;
+    bottom: -2%;
     background-size: cover;
-    margin-left: 63%;
+    margin-left: 69%;
   }
   .mekkanos .main-bg .mountain-bg {
     background-image: url("../../images/mountain.png");
@@ -6615,7 +6625,6 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 45%;
     position: absolute;
@@ -7477,7 +7486,6 @@
     display: none;
   }
   .mekkanos .main-bg .header-bg {
-    background-image: url("../../images/Humanoid New1.png");
     height: 200px;
     width: 40%;
     position: absolute;

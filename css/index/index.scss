@@ -2570,7 +2570,7 @@
                 }
             }
             .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
+                background-image: url("../../images/image\ \(1\).png");
                 height: 200px;
                 width: 40%;
                 position: absolute;
@@ -3341,13 +3341,13 @@
             }
             .header-bg{
                 display: block;
-                background-image: url("../../images/Humanoid New1.png");
-                height: 200px;
-                width: 38%;
-                position: absolute;
-                bottom: 30px;
-                background-size: cover;
-                margin-left: 61%;
+    background-image: url('../../images/image (1).png');
+    height: 200px;
+    width: 28%;
+    position: absolute;
+    bottom: 2px;
+    background-size: cover;
+    margin-left: 67%;
             }
             .mountain-bg{
                 background-image: url("../../images/mountain.png");
@@ -4075,189 +4075,202 @@
 @media only screen and (max-width: 415px) {
     
     .mekkanos{
-        .mb-nav{
-            display: block !important;
-            .top-nav {
-                position: fixed;
-                top: 0px;
-                z-index: 1;
-                background-color: #110f25 !important;
-                padding-top: 10px;
-                padding-left: 30px;
-                padding-right: 14px;
-                padding-bottom: 0px;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                transition: top .75s ease-in;
-                background-color: #e8e8e8;
-                h2{
-                    font-size: 17px;
-                    color: white;
-                    margin-bottom: 0px;
-                    
-                }
-                .navbar-brand{
-                    padding-bottom: 5px;
-                    padding-top: 0px;
-                    img{
-                        width: 160px;
-                    }
-                }
-                .menu{
-                    list-style: none;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
+        .main-bg{
+            .mb-nav{
+                display: block !important;
+                .top-nav {
+                    position: fixed;
+                    top: 0px;
+                    z-index: 1;
+                    background-color: #110f25 !important;
+                    padding-top: 10px;
+                    padding-left: 30px;
+                    padding-right: 14px;
+                    padding-bottom: 0px;
                     width: 100%;
-                    overflow-x: scroll;
-                    max-height: 0;
-                    color: white;
-                    padding-left:0px ;
-                    margin: 0px !important;
-                    transition: max-height .2s ease-out;
-                    .div{
-                        margin-top:100px;
-                        margin-left:-150px;
-                        form{
-                            margin-top: 0px !important;
-                            .search-img{
-                                    margin-right:16px;
-                                    margin-left: 0px;
-                                    border: 1px solid #444DDA;
-                                    width: 34px;
-                                    height: 34px;
-                                    border-radius:50%;
-                                    text-align: center;
-                                img{
-                                    margin-top: 4px;
-                                    width: 14px;
-                                }
-                            }
-                            .get-started{
-                                background-color: #444DDA;
-                                color: white;
-                                font-weight: 600;
-                            }
-                            a{
-                                color:white ;
-                                &:hover{
-                                    text-decoration:none;
-                                }
-                            }
-                        }
-                
-                        li{
-                            a{
-                                display: inline-block;
-                                min-width: 75px;
-                                margin: .8em 0;
-                                text-decoration: none;
-                                font-size: 18px;
-                                color: white;
-                
-                            }
-                        }
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    transition: top .75s ease-in;
+                    background-color: #e8e8e8;
+                    h2{
+                        font-size: 17px;
+                        color: white;
+                        margin-bottom: 0px;
                         
-                        #service{
-                            position: relative;
-                            .fa{
-                                margin-top: 14px;
-                                position: absolute;
-                                top: 3px;
-                                right: -162px;
-                            }
-                        }
-                        #solution{
-                            position: relative;
-                            .fa{
-                                margin-top: 14px;
-                                position: absolute;
-                                top: 3px;
-                                right: -162px;
-                            }
-                        }
-                        .service-list{
-                            a{
-                                font-size:14px;
-                            }
-                        }
-                        .solution-list{
-                            a{
-                                font-size:14px;
-                            }
+                    }
+                    .navbar-brand{
+                        padding-bottom: 5px;
+                        padding-top: 0px;
+                        img{
+                            width: 160px;
                         }
                     }
-                }
-            
-                .logo{
-                    display: inline-block;
-                    width: 150px;
-                    color: white;
-                }
-            
-                .menu-icon{
-                    cursor: pointer;
-                    display: inline-block;
-                    padding: 22px 16px;
-            
-                    .navicon{
-                        background: white;
-                        display: block;
-                        height: 2px;
-                        position: relative;
-                        width: 1.625rem;
-            
-                        &:before, &:after{
-                            background: white;
-                            content: '';
-                            display: block;
-                            height: 100%;
-                            position: absolute;
-                            transition: all .2s ease-out;
-                            width: 100%;
-                        }
-            
-                        &:before{
-                            top: 7px;
-                        }
-            
-                        &:after{
-                            top: -7px;
-                        }
-                    }
-                }
-            
-                .menu-btn{
-                    display: none;
-            
-                    &:checked ~ .menu{
-                        max-height: 170vh;
-                        height: 100vh;
+                    .menu{
+                        list-style: none;
                         display: flex;
-                        align-items: center;
-                    }
-            
-                    &:checked ~ .menu-icon .navicon{
-                        background: transparent;
-            
-                        &:before{
-                            transform: rotate(-45deg);
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        overflow-x: scroll;
+                        max-height: 0;
+                        color: white;
+                        padding-left:0px ;
+                        margin: 0px !important;
+                        transition: max-height .2s ease-out;
+                        .div{
+                            margin-top:100px;
+                            margin-left:-150px;
+                            form{
+                                margin-top: 0px !important;
+                                .search-img{
+                                        margin-right:16px;
+                                        margin-left: 0px;
+                                        border: 1px solid #444DDA;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius:50%;
+                                        text-align: center;
+                                    img{
+                                        margin-top: 4px;
+                                        width: 14px;
+                                    }
+                                }
+                                .get-started{
+                                    background-color: #444DDA;
+                                    color: white;
+                                    font-weight: 600;
+                                }
+                                a{
+                                    color:white ;
+                                    &:hover{
+                                        text-decoration:none;
+                                    }
+                                }
+                            }
+                    
+                            li{
+                                a{
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    margin: .8em 0;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: white;
+                    
+                                }
+                            }
+                            
+                            #service{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            #solution{
+                                position: relative;
+                                .fa{
+                                    margin-top: 14px;
+                                    position: absolute;
+                                    top: 3px;
+                                    right: -162px;
+                                }
+                            }
+                            .service-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                            .solution-list{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
                         }
-            
-                        &:after{
-                            transform: rotate(45deg);
+                    }
+                
+                    .logo{
+                        display: inline-block;
+                        width: 150px;
+                        color: white;
+                    }
+                
+                    .menu-icon{
+                        cursor: pointer;
+                        display: inline-block;
+                        padding: 22px 16px;
+                
+                        .navicon{
+                            background: white;
+                            display: block;
+                            height: 2px;
+                            position: relative;
+                            width: 1.625rem;
+                
+                            &:before, &:after{
+                                background: white;
+                                content: '';
+                                display: block;
+                                height: 100%;
+                                position: absolute;
+                                transition: all .2s ease-out;
+                                width: 100%;
+                            }
+                
+                            &:before{
+                                top: 7px;
+                            }
+                
+                            &:after{
+                                top: -7px;
+                            }
                         }
                     }
-            
-                    &:checked ~ .menu-icon:not(.steps) .navicon{
-                        &:before, &:after{
-                            top: 0;
+                
+                    .menu-btn{
+                        display: none;
+                
+                        &:checked ~ .menu{
+                            max-height: 170vh;
+                            height: 100vh;
+                            display: flex;
+                            align-items: center;
+                        }
+                
+                        &:checked ~ .menu-icon .navicon{
+                            background: transparent;
+                
+                            &:before{
+                                transform: rotate(-45deg);
+                            }
+                
+                            &:after{
+                                transform: rotate(45deg);
+                            }
+                        }
+                
+                        &:checked ~ .menu-icon:not(.steps) .navicon{
+                            &:before, &:after{
+                                top: 0;
+                            }
                         }
                     }
                 }
+                
+            }
+            .header-bg{
+                display: block;
+                background-image: url('../../images/image (1).png');
+                height: 200px;
+                width: 28%;
+                position: absolute;
+                bottom: 90px;
+                background-size: cover;
+                margin-left: 62%;
             }
         }
         .solution{
@@ -5193,7 +5206,9 @@
                 }
             }
             .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
+                
+                background-image: url("../../images/image\ \(1\).png");
+
                 height: 200px;
                 width: 40%;
                 position: absolute;
@@ -6138,13 +6153,14 @@
                 }
             }
             .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
+                
+                background-image: url("../../images/image\ \(1\).png");
                 height: 200px;
-                width: 37%;
+                width: 30%;
                 position: absolute;
-                bottom: 14%;
+                bottom: -2%;
                 background-size: cover;
-                margin-left: 63%;
+                margin-left: 69%;
             }
             .mountain-bg{
                 background-image: url("../../images/mountain.png");
@@ -7137,7 +7153,6 @@
                 }
             }  
             .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
                 height: 200px;
                 width: 45%;
                 position: absolute;
@@ -8054,7 +8069,6 @@
                 }
             }
             .header-bg{
-                background-image: url("../../images/Humanoid New1.png");
                 height: 200px;
                 width: 40%;
                 position: absolute;
